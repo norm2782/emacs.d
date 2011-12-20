@@ -57,7 +57,11 @@
 	url = https://github.com/emacsmirror/pretty-mode.git
 [submodule "site-lisp/csv-mode"]
 	path = site-lisp/csv-mode
-  url = https://github.com/emacsmirror/csv-mode.git
+	url = https://github.com/emacsmirror/csv-mode.git
 [sumodule "site-lisp/proofgeneral"]
-  path = site-lisp/proofgeneral
-  url = https://github.com/emacsmirror/proofgeneral.git
+	path = site-lisp/proofgeneral
+	url = https://github.com/emacsmirror/proofgeneral.git
+[submodule "site-lisp/evil"]
+	path = site-lisp/evil
+	url = git://gitorious.org/evil/evil.git
+
