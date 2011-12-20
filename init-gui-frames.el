@@ -27,7 +27,7 @@
 ;; Window size and features
 ;;----------------------------------------------------------------------------
 (if (fboundp 'tool-bar-mode)
-  (tool-bar-mode -1))
+  (tool-bar-mode 1))
 (if (fboundp 'set-scroll-bar-mode)
   (set-scroll-bar-mode nil))
 
