@@ -69,6 +69,8 @@
 (require 'init-haml)
 (require 'init-python-mode)
 (require 'init-haskell)
+(require 'init-agda)
+(require 'init-proofgeneral)
 (require 'init-ocaml)
 (require 'init-ruby-mode)
 (require 'init-rails)
