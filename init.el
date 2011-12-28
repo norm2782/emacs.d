@@ -4,7 +4,6 @@
 ;;----------------------------------------------------------------------------
 ;; Which functionality to enable (use t or nil for true and false)
 ;;----------------------------------------------------------------------------
-(setq *vi-emulation-support-enabled* nil) ; "viper-mode"
 (setq *spell-check-support-enabled* nil)
 (setq *macbook-pro-support-enabled* t)
 (setq *is-a-mac* (eq system-type 'darwin))
@@ -28,7 +27,6 @@
 (require 'init-xterm)
 (require 'init-title-bar)
 (require 'init-themes)
-;; (require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-proxies)
 (require 'init-dired)
@@ -58,7 +56,6 @@
 (require 'init-textile)
 (require 'init-markdown)
 (require 'init-csv)
-;; (require 'init-erlang)
 (require 'init-javascript)
 (require 'init-sh)
 (require 'init-php)
@@ -67,17 +64,11 @@
 (require 'init-nxml)
 (require 'init-css)
 (require 'init-haml)
-;; (require 'init-python-mode)
 (require 'init-haskell)
 (require 'init-agda)
 (require 'init-proofgeneral)
-;; (require 'init-ocaml)
-;; (require 'init-ruby-mode)
-;; (require 'init-rails)
 
 (require 'init-lisp)
-;; (require 'init-slime)
-;; (require 'init-clojure)
 (require 'init-common-lisp)
 
 (when *spell-check-support-enabled*
