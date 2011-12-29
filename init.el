@@ -4,6 +4,7 @@
 ;;----------------------------------------------------------------------------
 ;; Which functionality to enable (use t or nil for true and false)
 ;;----------------------------------------------------------------------------
+(setq *vi-emulation-support-enabled* nil) ; "evil-mode"
 (setq *spell-check-support-enabled* nil)
 (setq *macbook-pro-support-enabled* t)
 (setq *is-a-mac* (eq system-type 'darwin))
