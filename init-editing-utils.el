@@ -20,6 +20,7 @@
  tooltip-delay 1.5
  truncate-lines nil
  truncate-partial-width-windows nil
+ ring-bell-function (lambda nil (message ""))
  visible-bell t)
 
 (transient-mark-mode t)
