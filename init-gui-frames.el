@@ -4,7 +4,7 @@
 (defun maybe-suspend-frame ()
   (interactive)
   (unless (and *is-a-mac* window-system)
-                    (suspend-frame)))
+    (suspend-frame)))
 
 (global-set-key (kbd "C-z") 'maybe-suspend-frame)
 
@@ -21,7 +21,7 @@
 ;;----------------------------------------------------------------------------
 ;; Show a marker in the left fringe for lines not in the buffer
 ;;----------------------------------------------------------------------------
-(setq default-indicate-empty-lines t)
+(setq indicate-empty-lines t)
 
 
 ;;----------------------------------------------------------------------------
@@ -31,9 +31,6 @@
   (tool-bar-mode -1))
 (when (fboundp 'set-scroll-bar-mode)
   (set-scroll-bar-mode nil))
-
-(setq ns-auto-hide-menu-bar nil)
-(require 'init-maxframe)
 
 (defun adjust-opacity (frame incr)
   (let* ((oldalpha (or (frame-parameter frame 'alpha) 100))

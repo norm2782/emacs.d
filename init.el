@@ -12,23 +12,17 @@
 (setq *is-cocoa-emacs* (and *is-a-mac* (eq window-system 'ns)))
 
 ;;----------------------------------------------------------------------------
-;; Make elisp more civilised
-;;----------------------------------------------------------------------------
-(require 'cl)
-
-;;----------------------------------------------------------------------------
 ;; Load configs for specific features and modes
 ;;----------------------------------------------------------------------------
 (require 'init-utils)
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
 (require 'init-elpa)
-(require 'init-marmalade)
 (require 'init-exec-path) ;; Set up $PATH
 (require 'init-frame-hooks)
 (require 'init-xterm)
-(require 'init-title-bar)
 (require 'init-themes)
 (require 'init-gui-frames)
+(require 'init-maxframe)
 (require 'init-proxies)
 (require 'init-dired)
 (require 'init-evil)
@@ -52,7 +46,6 @@
 (require 'init-darcs)
 (require 'init-git)
 
-(require 'init-gnuplot)
 (require 'init-crontab)
 (require 'init-textile)
 (require 'init-markdown)
@@ -61,7 +54,6 @@
 (require 'init-sh)
 (require 'init-php)
 (require 'init-org)
-(require 'init-htmlize)
 (require 'init-nxml)
 (require 'init-css)
 (require 'init-haml)
@@ -75,6 +67,7 @@
 (when *spell-check-support-enabled*
   (require 'init-spelling))
 
+(require 'init-marmalade)
 (require 'init-misc)
 
 
